@@ -1,0 +1,104 @@
+Model Object Methods
+
+Array
+(
+    [0] => getSource
+    [1] => getId
+    [2] => getFname
+    [3] => getLname
+    [4] => __construct
+    [5] => setDI
+    [6] => getDI
+    [7] => getModelsMetaData
+    [8] => getModelsManager
+    [9] => setTransaction
+    [10] => getSchema
+    [11] => setConnectionService
+    [12] => setReadConnectionService
+    [13] => setWriteConnectionService
+    [14] => getReadConnectionService
+    [15] => getWriteConnectionService
+    [16] => setDirtyState
+    [17] => getDirtyState
+    [18] => getReadConnection
+    [19] => getWriteConnection
+    [20] => assign
+    [21] => cloneResultMap
+    [22] => cloneResultMapHydrate
+    [23] => cloneResult
+    [24] => find
+    [25] => findFirst
+    [26] => query
+    [27] => count
+    [28] => sum
+    [29] => maximum
+    [30] => minimum
+    [31] => average
+    [32] => fireEvent
+    [33] => fireEventCancel
+    [34] => appendMessage
+    [35] => validationHasFailed
+    [36] => getMessages
+    [37] => save
+    [38] => create
+    [39] => update
+    [40] => delete
+    [41] => getOperationMade
+    [42] => refresh
+    [43] => skipOperation
+    [44] => readAttribute
+    [45] => writeAttribute
+    [46] => hasOne
+    [47] => belongsTo
+    [48] => hasMany
+    [49] => hasManyToMany
+    [50] => addBehavior
+    [51] => setSnapshotData
+    [52] => hasSnapshotData
+    [53] => getSnapshotData
+    [54] => hasChanged
+    [55] => getChangedFields
+    [56] => getRelated
+    [57] => __call
+    [58] => __callStatic
+    [59] => __set
+    [60] => __get
+    [61] => __isset
+    [62] => serialize
+    [63] => unserialize
+    [64] => dump
+    [65] => toArray
+    [66] => setup
+)
+
+Sql result methods
+
+Array
+(
+    [0] => __construct
+    [1] => valid
+    [2] => toArray
+    [3] => serialize
+    [4] => unserialize
+    [5] => next
+    [6] => key
+    [7] => rewind
+    [8] => seek
+    [9] => count
+    [10] => offsetExists
+    [11] => offsetGet
+    [12] => offsetSet
+    [13] => offsetUnset
+    [14] => getType
+    [15] => getFirst
+    [16] => getLast
+    [17] => setIsFresh
+    [18] => isFresh
+    [19] => setHydrateMode
+    [20] => getHydrateMode
+    [21] => getCache
+    [22] => current
+    [23] => getMessages
+    [24] => delete
+    [25] => filter
+)

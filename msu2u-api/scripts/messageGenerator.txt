@@ -1,0 +1,49 @@
+<?php
+
+$f = fopen("messages.txt","w");
+
+//First line of SQL Query
+fwrite($f, "INSERT INTO `messages` (`MessageID`, `SenderID`, `ReceiverID`, `Subject`, `Content`, `Timestamp`, `Sent`, `Deleted`) VALUES" . chr(13));
+
+//Number of Users
+$numUsers = 150;
+
+//Have each user sending a message to the user in 'front' of them
+for($x=1; $x<=$numUsers; $x++)
+{
+	//MessageID, SenderID, and Receiver
+	$messageID = $x;
+	$senderID = $x;
+	$receiverID = ($x % $numUsers) + 1;
+	fwrite($f, "(" . $messageID . "," . $senderID . "," . $receiverID . ",");
+	
+	//Subject
+	$subject = "Hey! How are you?!";
+	fwrite($f, "'" . $subject . "',");
+	
+	//Content
+	$content = "Hey user #" . $receiverID . ", it is me, user #" . $senderID . "! Now that you have read this, you must forward this message to one other user. Good talking to you again!";
+	fwrite($f, "'" . $content . "',");
+	
+	//Timestamp
+	//Initialize time to June 16, 2014 - 13:51
+	$timestamp = 1402926660;
+	//Add up to a week to the time
+	$timestamp += rand(0, 604800);
+	fwrite($f, $timestamp . ",");
+	
+	//Sent and Deleted
+	$sent = 1;
+	$deleted = 0;
+	fwrite($f, $sent . "," . $deleted . ")");
+	
+	//End of line formatting
+	if($x == $numUsers)
+		fwrite($f, ";");
+	else
+		fwrite($f, "," . chr(13));
+}
+
+fclose($f);
+
+?>

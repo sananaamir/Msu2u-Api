@@ -1,0 +1,38 @@
+{
+    "name": "Auditory Implant Initiative",
+    "description": "Data Collection Website for Cochlear Implant Stanardization of care.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":"Sanan Aamir",
+            "email":"",
+        },
+        {
+            "name":"Mando Garcia",
+            "email":"",
+        },
+        {
+            "name": "Terry Griffin",
+            "email": "terry.griffin@mwsu.edu"
+        },
+        {
+            "name":"Anne Lam",
+            "email":"anne.v.lam@gmail.com",
+        },
+        {
+            "name":"Travis Osteen",
+            "email":"",
+        },
+        {
+            "name":"James Rowe",
+            "email":"",
+        }
+
+    ],
+    "require":{
+        "ext-mcrypt": "*",
+        "mysql":">=5.5.0",
+        "php":">=5.3.0",
+        "zircote/swagger-php": "*"
+    }
+}
