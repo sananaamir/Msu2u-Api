@@ -94,10 +94,10 @@ $di->set('modelsManager', function() {
 
 $di->set("db", function() {
     return new \Phalcon\Db\Adapter\Pdo\Mysql(array(
-         "host" => "cs.mwsu.edu",
-         "username" => "msu2u",
-         "password" => "gomsumustangs2014!",
-         "dbname" => "msu2u"
+         "host" => "localhost",
+         "username" => "your username",
+         "password" => "your password",
+         "dbname" => "your database name"
     ));
 });
 
