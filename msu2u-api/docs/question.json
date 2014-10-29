@@ -1,0 +1,65 @@
+{
+    "basePath": "http://api.msu2u.net",
+    "swaggerVersion": "1.2",
+    "apiVersion": "1.0.0",
+    "resourcePath": "/question",
+    "apis": [
+        {
+            "path": "/question/",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Retrieve question set",
+                    "nickname": "question",
+                    "type": "Question",
+                    "responseMessages": [
+                        {
+                            "code": 404,
+                            "message": "Questions not found"
+                        }
+                    ],
+                    "notes": "Returns all questions"
+                }
+            ]
+        },
+        {
+            "path": "/question/{id}",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Find question by ID",
+                    "nickname": "getQuestion",
+                    "type": "Question",
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "questionID",
+                            "type": "integer",
+                            "required": true,
+                            "description": "ID of question that needs to be fetched",
+                            "format": "int64",
+                            "minimum": "1.0",
+                            "maximum": "100000.0"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid ID supplied"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Question not found"
+                        }
+                    ],
+                    "notes": "Returns a question based on ID"
+                }
+            ]
+        }
+    ],
+    "produces": [
+        "application/json",
+        "application/xml",
+        "text/plain"
+    ]
+}
