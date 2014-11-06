@@ -1,6 +1,7 @@
 ### Get Methods
 
-- **Directory (Faculty/Staff):**
+- **Directory (Faculty/Staff):** 
+  - API link: http://cs.mwsu.edu/msu2u-api/v1/persons
   - Contact Info
   - Picture
   - Department
@@ -11,8 +12,10 @@
   - Archived and Upcoming Sports Events
   - Results
 - **Wichitan News:**
+  - API link: http://cs.mwsu.edu/msu2u-api/v1/news 
   - Latest Articles
 - **WFMA (Wichita Falls Museum of Arts):**
+  - API link: http://cs.mwsu.edu/msu2u-api/v1/wfma
   - Promotions/Exhibitions
 - **MSU Calendar:**
   - Events: Non-sporting events
