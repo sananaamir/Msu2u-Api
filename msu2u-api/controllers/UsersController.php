@@ -1,7 +1,7 @@
 <?php
 namespace PhalconRest\Controllers;
 use \PhalconRest\Exceptions\HTTPException,
-    PhalconRest\Models\Users as Users
+    PhalconRest\Models\Users as Users;
 
 
 
